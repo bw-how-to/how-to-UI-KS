@@ -13,7 +13,7 @@ body {
 
 }
 
-.section-b {
+#section-b {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -86,7 +86,7 @@ button:hover {
     color: green;
 }
 
-.bg-image {
+body .bg-image {
     position: absolute;
     background: #333 url('https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-position: center;
@@ -114,9 +114,9 @@ footer {
     background: black;
 }
 
-section {
-    padding: 3rem;
-}
+/* section {
+    padding: ;
+} */
 
 @media(min-width: 700px) {
     .grid {
