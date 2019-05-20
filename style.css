@@ -7,23 +7,28 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     text-align: center;
+    width: 100%;
+    height: 100%;
+    
 
 }
 
-main {
+.section-b {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    padding: 7rem;
+    padding: 1rem;
+    height: auto;
 }
 
-img {
+/* img {
     display: flex;
     width: 100%;
     height: auto;
     align-items: center;
     border: 4px solid black
-}
+    
+} */
 
 h1 {
     margin: 0;
@@ -81,22 +86,22 @@ button:hover {
     color: green;
 }
 
-#showcase .bg-image {
+.bg-image {
     position: absolute;
     background: #333 url('https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 450px;
+    height: 100%;
     z-index: -1;
     opacity: 0.4;
     
 }
 
 #showcase h1 {
-    padding-top: 100px;
-    padding-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 #showcase .content-wrap,
@@ -107,5 +112,20 @@ button:hover {
 footer {
     padding: 2rem;
     background: black;
+}
+
+section {
+    padding: 3rem;
+}
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25rem)) 1fr;
+    }
+
+    .content-wrap {
+        grid-column: 2/4;
+    }
 }
 
