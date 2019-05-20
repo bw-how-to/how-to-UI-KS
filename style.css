@@ -13,7 +13,7 @@ body {
 
 }
 
-main {
+.section-b {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,15 +21,14 @@ main {
     height: auto;
 }
 
-img {
+/* img {
     display: flex;
-    flex-shrink: 50%;
     width: 100%;
     height: auto;
     align-items: center;
     border: 4px solid black
     
-}
+} */
 
 h1 {
     margin: 0;
