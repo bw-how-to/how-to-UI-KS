@@ -1,10 +1,69 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
 /* Core Styles*/
+
+* {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
 
 body {
     margin: 0;
     background: green;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     text-align: center;
     width: 100%;
@@ -13,22 +72,59 @@ body {
 
 }
 
-#section-b {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1rem;
-    height: auto;
+header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
 }
 
-/* img {
+.toggle {
+    cursor: pointer;
+    background: green;
+    border: 1px solid black;
+    padding-left: 1rem;
+}
+
+#section-a {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
     height: auto;
-    align-items: center;
-    border: 4px solid black
+    padding-bottom: 10rem;
+}
+
+@media (max-width:700px) {
+    #section-a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        height: auto;
+        
+    }
+}
+
+img {
+    border: 4px solid black;
+    height: 328px;
+    width: 428px;
     
-} */
+} 
+
+@media (max-width: 700px) {
+    img {
+        height: 128px;
+        width: 228px;
+    }
+}
+
+@media (max-width: 700px) {
+    .aboutIMG {
+        height: 228px;
+        width: 428px;
+    }
+}
 
 h1 {
     margin: 0;
@@ -44,10 +140,19 @@ p {
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
     background: none;
     padding: 1rem 1rem;
     margin: .5rem 0;
     color: white;
+}
+
+@media (max-width: 700px) {
+    nav {
+        display: block;
+        align-items: center;
+    }
 }
 
 nav a {
@@ -55,33 +160,40 @@ nav a {
     text-decoration: none;
 }
 
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    background: none;
-    padding: 1rem 1rem;
-    border: 1px solid white;
-    margin: .5rem 0;
-    color: white;
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
 }
 
-.btn:hover {
-    background: white;
-    color: green;
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+@media (max-width: 700px) {
+    .navLinks {
+        width: 90%;
+    }
 }
 
-
-button {
-    display: inline-block;
-    text-decoration: none;
-    background: green;
-    padding: 1rem 1rem;
-    border: 1px solid white;
-    margin: .5rem 0;
-    color: white;
+li {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-left: 2rem;
+}
+.toggle {
+    margin: 2rem;
 }
 
-button:hover {
+@media (max-width: 700px) {
+    .toggle{
+        margin: .5rem 
+    }
+}
+
+.toggle:hover {
     background: white;
     color: green;
 }
@@ -114,18 +226,15 @@ footer {
     background: black;
 }
 
-/* section {
-    padding: ;
-} */
+.top-bar {
 
-@media(min-width: 700px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 25rem)) 1fr;
-    }
-
-    .content-wrap {
-        grid-column: 2/4;
-    }
+    width: 100%;
+    padding: 5px;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-
