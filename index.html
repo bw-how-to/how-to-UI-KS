@@ -5,28 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="nav.js" async></script>
     <title>HowToProject</title>
 </head>
 <body>
         <div class="bg-image"></div>
-    <!-- <header id="showcase" class="grid">
-            <div class="top-bar" >
-                 <div class="navigation">
-                 <i class="fas fa-bars menu-btn"></i>                
-                <div class="menu-overlay">
-                 <div class="modal-menu">                            
-                     <nav>
-                         <i class="fas fa-times"></i>
-                         <a href="index.html"><div class="logo"><img src="#" alt="logo">logo</div></a> 
-                         <a href="#home" class="menu-link"><i class="fas fa-caret-right"></i> Home</a>
-                       <a href="about-us.html" class="menu-link"><i class="fas fa-caret-right"></i> About Us</a>
-                           <a href="#contact" class="menu-link"><i class="fas fa-caret-right"></i> Contact Us</a>
-                       <div class="login-signup"><a href="#" class="menu-link"><i class="far fa-user"></i> Login</a> <a href="#" class="menu-link"><i class="fas fa-clipboard-list"></i> Sign Up</a></div>
-                    </nav>
-                  </div>
-             </div>
-        </div>
-    </header> -->
+   <header>
+      <nav>
+          <div class="logo">
+            <h1>How-To</h1>
+          </div>
+          <ul class="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">APP</a></li>
+          </ul>
+      </nav>
+    </header>
+      
+   </script>
 <main id="main">
     <section id="section-a">
         <div>
@@ -34,7 +32,7 @@
             <h1>
                 What Is "How-To!"
             </h1>
-            <button>What Is It?</button>
+            <div class="toggle" data-tab="whatIsIt">What is it?</div>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Praesent ut risus et lectus pellentesque luctus vel vel orci. 
@@ -46,7 +44,7 @@
             <h1>
             Problem Solved!
             </h1>
-            <button>Goodbye Problems!</button>
+            <div class="toggle" data-tab="gbProblems">Goodbye Problems!</div>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Praesent ut risus et lectus pellentesque luctus vel vel orci. 
@@ -58,7 +56,7 @@
             <h1>
             Our Mission!
             </h1>
-            <button>Our Message To You</button>
+            <div class="toggle" data-tab="message">Our message to you!</div>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Praesent ut risus et lectus pellentesque luctus vel vel orci. 
