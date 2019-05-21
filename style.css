@@ -91,13 +91,33 @@ header {
     justify-content: space-between;
     padding: 1rem;
     height: auto;
-    padding-bottom: 15rem;
+    padding-bottom: 10rem;
+}
+
+@media (max-width:700px) {
+    #section-a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        height: auto;
+        
+    }
 }
 
 img {
-    border: 4px solid black
+    border: 4px solid black;
+    height: 328px;
+    width: 428px;
     
 } 
+
+@media (max-width: 700px) {
+    img {
+        height: 128px;
+        width: 228px;
+    }
+}
 
 h1 {
     margin: 0;
@@ -121,6 +141,12 @@ nav {
     color: white;
 }
 
+@media (max-width: 700px) {
+    nav {
+        display: block
+    }
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -135,7 +161,12 @@ nav a {
 .navLinks {
     display: flex;
     justify-content: space-around;
-    width: 20%;
+    width: 25%;
+}
+@media (max-width: 700px) {
+    .navLinks {
+        width: 90%;
+    }
 }
 
 li {
@@ -143,6 +174,15 @@ li {
     justify-content: flex-end;
     flex-direction: row;
     padding-left: 2rem;
+}
+.toggle {
+    margin: 2rem;
+}
+
+@media (max-width: 700px) {
+    .toggle{
+        margin: .5rem 
+    }
 }
 
 .toggle:hover {
