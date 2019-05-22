@@ -240,3 +240,19 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: .875em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: .87em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
