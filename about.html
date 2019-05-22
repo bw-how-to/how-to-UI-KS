@@ -4,40 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
     <script src="nav.js" async></script>
     <title>HowToProject</title>
 </head>
 <body>
         <div class="bg-image"></div>
    <header>
-      <nav>
-          <div class="logo">
-            <h1>How-To</h1>
+      <nav class="nav-main">
+          <div class="btn-toggle-nav" onclick="toggleNav()">
+            <h1>H<svg class="svg-inline--fa fa-play fa-w-14" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6zm-16.2 55.1l-352 208C45.6 483.9 32 476.6 32 464V47.9c0-16.3 16.4-18.4 24.1-13.8l352 208.1c10.5 6.2 10.5 21.4.1 27.6z"></path></svg>W-TO</h1>
           </div>
-          <ul class="navLinks">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="bw-how-to.netlify.com/login">Log-In</a></li>
-              <li><a href="bw-how-to.netlify.com/register">Sign-Up</a></li>
-          </ul>
+          
       </nav>
-    </header>
-    
-<main>
-    <section id="section-a">
-        <div class="mainInfo">
-            <img class="aboutIMG" src="https://images.pexels.com/photos/1413653/pexels-photo-1413653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="img">
-            <h1>
-                Who Are We?
-            </h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Praesent ut risus et lectus pellentesque luctus vel vel orci. 
-            Cras id aliquam nulla, nec commodo justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Praesent ut risus et lectus pellentesque luctus vel vel orci. 
-            Cras id aliquam nulla, nec commodo justo.
-            </p>
-     </div>
-</main>
+
+      <aside class="nav-sidebar">
+       <ul>
+        <li><span>MENU</span></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="bw-how-to.netlify.com/login">Log-In</a></li>
+        <li><a href="bw-how-to.netlify.com/register">Sign-Up</a></li>
+      </ul>
+    </aside>
+ </header>
+
+ <div class="container about">
+        <section id="section-a" class="about-content-section content-section">
+                <div class="mainInfo">
+                     <img src="https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img" id="bIMG">
+                     <div class="toggle" data-tab="3">Our message to you!</div>
+                     <p data-tab="3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Praesent ut risus et lectus pellentesque luctus vel vel orci. 
+                      Cras id aliquam nulla, nec commodo justo.
+                      </p>
+                     </div>
+         </section>
+         <section id="section-a" class="about-content-section content-section">
+                <div class="mainInfo">
+                     <img src="https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img" id="bIMG">
+                     <div class="toggle" data-tab="3">Our message to you!</div>
+                     <p data-tab="3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Praesent ut risus et lectus pellentesque luctus vel vel orci. 
+                      Cras id aliquam nulla, nec commodo justo.
+                      </p>
+                     </div>
+         </section>
+         <section id="section-a" class="about-content-section content-section">
+                <div class="mainInfo">
+                     <img src="https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img" id="bIMG">
+                     <div class="toggle" data-tab="3">Our message to you!</div>
+                     <p data-tab="3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Praesent ut risus et lectus pellentesque luctus vel vel orci. 
+                      Cras id aliquam nulla, nec commodo justo.
+                      </p>
+                     </div>
+         </section>
+         <section id="section-a" class="about-content-section content-section">
+                <div class="mainInfo">
+                     <img src="https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img" id="bIMG">
+                     <div class="toggle" data-tab="3">Our message to you!</div>
+                     <p data-tab="3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Praesent ut risus et lectus pellentesque luctus vel vel orci. 
+                      Cras id aliquam nulla, nec commodo justo.
+                      </p>
+                     </div>
+         </section>
+       
+       
+   
+<footer>
+        <div>Sims Solutions</div>
+        <div>Project By Kevin Sims</div>
+    </footer>
+    <script src="toggle.js" async></script>
+</body>

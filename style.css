@@ -78,11 +78,19 @@ header {
     width: 100%;
 }
 
+.navLinks a:hover {
+    color: #60A16D;
+    font-weight: bold;
+}
+
 .toggle {
+    display: flex;
+    justify-content: center;
     cursor: pointer;
     background: green;
     border: 1px solid black;
     padding-left: 1rem;
+    width: 30%;
 }
 
 #section-a {
@@ -108,7 +116,7 @@ header {
 img {
     border: 4px solid black;
     height: 328px;
-    width: 428px;
+    width: 228px;
     
 } 
 
@@ -135,6 +143,32 @@ h1 {
 p {
     margin: 0;
     padding: 1.5rem;
+    font-weight: bolder;
+    background-color: black;
+}
+
+.mainInfo {
+    background-color: #60A16D; 
+    margin: 1rem;
+    padding: .5rem;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.headline {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem;
+    justify-content: flex-end;
+    font-size: 4rem;
+    background-color: black;
+    font-weight: bolder;
+}
+
+.mainInfo p {
+    visibility: hidden;
 }
 
 nav {
@@ -182,9 +216,10 @@ li {
     justify-content: flex-end;
     flex-direction: row;
     padding-left: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .toggle {
-    margin: 2rem;
+    margin: 1rem;
 }
 
 @media (max-width: 700px) {
@@ -199,7 +234,7 @@ li {
 }
 
 body .bg-image {
-    position: absolute;
+    position: fixed;
     background: #333 url('https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-position: center;
     background-repeat: no-repeat;
@@ -208,6 +243,7 @@ body .bg-image {
     height: 100%;
     z-index: -1;
     opacity: 0.4;
+   
     
 }
 
@@ -237,4 +273,30 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: .875em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: .87em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+#bIMG {
+    width: 100%;
+    border: 4px solid black;
+    height: 328px;
+}
+
+.img {
+    margin: 1rem;
 }

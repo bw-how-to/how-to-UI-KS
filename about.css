@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    height: 100%;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+header, .nav-main {
+    width: 100%;
+    height: 60px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    border: 1px solid black;
+}
+
+.btn-toggle-nav {
+    width: 100px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    color: #FFF;
+
+}
+
+.btn-toggle-nav:hover {
+    opacity: 0.3;
+    
+}
+
+.nav-sidebar {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    padding: 5px;
+    background-color: transparent;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul {
+    padding-top: 35px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav-sidebar ul li{
+    line-height: 60px;
+    list-style: none;
+}
+
+.nav-sidebar ul span, .nav-sidebar ul a{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 60px;
+    width: 70px;
+    padding: 0 5px;
+    padding-top: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+ 
+#section-a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    height: auto;
+    padding-bottom: 2.5rem;
+    padding-top: 3rem;
+}
+
+@media (max-width:700px) {
+    #section-a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        height: auto;
+        
+    }
+}
+
+
+body {
+    margin: 0;
+    background: green;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 100vh;
+    
+
+}
+
+body .bg-image {
+    position: fixed;
+    background: #333 url('https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+footer {
+    padding: 2rem;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+}
+
+img {
+    border: 4px solid black;
+    height: 328px;
+    width: 228px;
+    margin: 20px;
+    
+} 
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: .875em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: .87em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.mainInfo p {
+    visibility: hidden;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+}
