@@ -19,9 +19,10 @@ header, .nav-main {
     background-color: green;
     display: flex;
     justify-content: center;
-    z-index: 1000;
+    z-index: 1;
     position: fixed;
     top: 0;
+    border: 1px solid black;
 }
 
 .btn-toggle-nav {
@@ -85,3 +86,85 @@ header, .nav-main {
 }
 
  
+#section-a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    height: auto;
+    padding-bottom: 2.5rem;
+    padding-top: 3rem;
+}
+
+@media (max-width:700px) {
+    #section-a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        height: auto;
+        
+    }
+}
+
+
+body {
+    margin: 0;
+    background: green;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 100vh;
+    
+
+}
+
+body .bg-image {
+    position: fixed;
+    background: #333 url('https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+footer {
+    padding: 2rem;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+}
+
+img {
+    border: 4px solid black;
+    height: 328px;
+    width: 428px;
+    margin: 20px;
+    
+} 
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: .875em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: .87em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
