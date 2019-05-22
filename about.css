@@ -148,7 +148,7 @@ footer {
 img {
     border: 4px solid black;
     height: 328px;
-    width: 428px;
+    width: 228px;
     margin: 20px;
     
 } 
@@ -167,4 +167,12 @@ svg:not(:root).svg-inline--fa {
     height: .87em;
     overflow: visible;
     vertical-align: -.125em;
+}
+
+.mainInfo p {
+    visibility: hidden;
+}
+
+.toggle {
+    cursor: pointer;
 }
