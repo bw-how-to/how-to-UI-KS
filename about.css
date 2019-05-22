@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
+    height: 100%;
 
 }
 ul{
@@ -175,4 +176,17 @@ svg:not(:root).svg-inline--fa {
 
 .toggle {
     cursor: pointer;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
 }

@@ -9,7 +9,7 @@ let toggleNav = function() {
     if(toggleNavStatus === false) {
         getSidebarUl.style.visibility = "visible";
         getSidebar.style.height = "390px";
-        getSidebarTitle.style.opacity = "0.5";
+        getSidebarTitle.style.opacity = "5";
 
         let arrayLength = getSidebarLinks.length;
         for (var i = 0; i < arrayLength; i++) {
