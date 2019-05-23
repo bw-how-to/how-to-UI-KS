@@ -43,6 +43,16 @@ header, .nav-main {
     
 }
 
+.navLinks a:hover {
+    color: #60A16D;
+    font-weight: bold;
+}
+
+.toggle:hover {
+    background: white;
+    color: green;
+}
+
 .nav-sidebar {
     cursor: pointer;
     display: flex;
@@ -131,7 +141,7 @@ body .bg-image {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 1600px;
     z-index: -1;
     opacity: 0.4;
     
@@ -189,4 +199,8 @@ svg:not(:root).svg-inline--fa {
     width: 100%;
     margin: 0 auto;
     margin-top: 140px;
+}
+
+.mainInfo {
+    padding-bottom: 2.3rem;
 }
